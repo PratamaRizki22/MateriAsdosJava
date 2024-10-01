@@ -45,7 +45,7 @@ public class Method {
     }
 
     public static void main(String[] args) {
-        String perkenalan = perkenalan("Rizki", 25, alamat());
+        String perkenalan = perkenalan("Jojo", 56, alamat());
         System.out.println(perkenalan);
         
         int saldoAwal = saldo(1000);
