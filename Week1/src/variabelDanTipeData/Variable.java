@@ -1,8 +1,12 @@
 package variabelDanTipeData;
 
 public class Variable {
+    static String varGlobal="Ini variabel global";  //nempel pada kelas
+    String varNonStatic="Ini juga global tapi non static"; // harus manggil kelasnya dulu
+    
     public static void main(String[] args) {
-        var testInt= 10;
+        // semua fungsi dalam main ini disebut variabel local
+        var testInt= 10; 
         var testString="123";
        
         //int
@@ -32,5 +36,11 @@ public class Variable {
         System.out.println(charExample);
         System.out.println(stringExampe);
         System.out.println(booleanExample);
+        System.out.println(varGlobal);
+        
+        Variable variable=new Variable();
+        System.out.println(variable.varNonStatic);
+                
+        
     }  
 }
