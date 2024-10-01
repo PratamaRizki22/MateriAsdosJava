@@ -9,6 +9,7 @@ public class Method {
         return "Perkenalkan, nama saya " + nama + ", umur saya " + umur + " tahun, alamat saya " + alamat;        
     }
     
+    //variable atau method tanpa static harus membuat objek kelas dulu baru bisa dipanggil
     String tanpaStatic(){
         
         String a="nama: ";
