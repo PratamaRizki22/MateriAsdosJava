@@ -1,6 +1,5 @@
 package IfElse;
 
-
 public class Penerapan {
     
     static String cekKedewasaan(int umur) {
@@ -14,11 +13,9 @@ public class Penerapan {
                 return "umur anda tidak masuk akal";
             }
         
-
     }
-    
     public static void main(String[] args) {
-        int umur = 56;
+        int umur = 112;
         String hasil = cekKedewasaan(umur);
         System.out.println("Umur: " + umur + " - " + hasil);
     }

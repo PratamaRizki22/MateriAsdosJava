@@ -2,18 +2,15 @@ package SwichCase;
 
 public class Penerapan {
     
-    static String cekKelulusan(int nilai) {
-        if (nilai >= 60) {
-            return "Lulus";
-        } else {
-            return "Tidak Lulus";
-        }
-    }
 
     static String cekKategoriNilai(int nilai) {
         String kategori;
         switch (nilai / 10) {
             case 10:
+                if (nilai > 100) {
+                    kategori = "Nilai tidak valid";
+                    break;
+                }
             case 9:
                 kategori = "A";
                 break;
@@ -34,10 +31,7 @@ public class Penerapan {
     }
 
     public static void main(String[] args) {
-        int nilai = 75;
-
-        String kelulusan = cekKelulusan(nilai);
-        System.out.println("Nilai: " + nilai + " - " + kelulusan);
+        int nilai = 101;
         
         String kategori = cekKategoriNilai(nilai);
         System.out.println("Kategori Nilai: " + kategori); 
